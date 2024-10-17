@@ -14,8 +14,11 @@ public class TempConverter {
                 System.out.println("Please input a temperature to change from Farenheit to Celsius.");
                 if (scan.hasNextDouble()) {
                     temp = scan.nextDouble();
+                    double tempConverted = ((temp - 32) * 5 / 9);
                     scan.nextLine();
-                    System.out.println("The temperature " + temp + " converted to Farenheit equals: " + ((temp - 32) * 5 / 9) + ".");
+                    System.out.print("The temperature " + temp + " converted to Farenheit equals: ");
+                    System.out.printf("%.2f", tempConverted);
+                    System.out.println(".");
                     System.out.println("Would you like to play again?");
                     do {
                         if (scan.hasNextLine()) {
