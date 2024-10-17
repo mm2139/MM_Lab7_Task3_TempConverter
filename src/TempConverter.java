@@ -26,11 +26,9 @@ public class TempConverter {
                             if (cont.equalsIgnoreCase("Y") || cont.equalsIgnoreCase("N")) {
                                 contHasResponse = true;
                             } else {
-                                scan.nextLine();
                                 System.out.println("You have inputted an invalid response - please try again.");
                             }
                         } else {
-                            scan.nextLine();
                             System.out.println("You have inputted an invalid response - please try again.");
                         }
                     } while (contHasResponse == false);
